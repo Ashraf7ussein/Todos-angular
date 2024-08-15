@@ -6,7 +6,7 @@ const todos = require("./routes/todos");
 const app = express();
 
 mongoose
-  .connect("mongodb://localhost/todos")
+  .connect("mongodb+srv://ashrafhussein1997:12345@cluster0.siunt.mongodb.net/")
   .then((res) => console.log("Connected to mongoDB"))
   .catch((err) => console.error("Could not connect to MongoDB...", err));
 
