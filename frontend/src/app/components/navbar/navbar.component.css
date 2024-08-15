@@ -1,0 +1,33 @@
+.col-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #615cc8;
+    color: #e1e3e8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid grey;
+    background-color: #282834;
+    color: #e1e3e8;
+}
+
+.navbar p {
+    font-size: x-large;
+    font-weight: bold;
+}

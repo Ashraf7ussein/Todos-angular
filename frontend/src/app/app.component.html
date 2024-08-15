@@ -1,0 +1,13 @@
+<div class="app">
+  <app-todo-dialog *ngIf="showDialog"></app-todo-dialog>
+  <div class="app-container">
+    <app-side-bar (selectComponent)="onComponentSelect($event)"></app-side-bar>
+    <div>
+      <app-navbar [title]="title" (addTask)="toggleDialog()"></app-navbar>
+      <ng-container [ngSwitch]="currentComponent">
+        <app-todo-list *ngSwitchCase="'platformLaunch'"></app-todo-list>
+        <app-marketing-plan *ngSwitchCase="'marketingPlan'"></app-marketing-plan>
+      </ng-container>
+    </div>
+  </div>
+</div>

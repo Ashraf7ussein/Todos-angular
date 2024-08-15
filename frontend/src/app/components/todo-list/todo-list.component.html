@@ -1,0 +1,17 @@
+<div class="btn-container">
+  <button class="btn" (click)="sortAscending()">Sort Ascending</button>
+  <button class="btn" (click)="sortDescending()">Sort Descending</button>
+</div>
+<div class="list-container">
+  
+  <div *ngFor="let column of columns">
+    <h2 class="column-title">{{ column.title }}</h2>
+   
+    <app-todo-card
+      *ngFor="let todo of column.todos | sortTodos:sortBy:sortType"
+      [todo]="todo"
+      (delete)="onDelete($event)"
+    ></app-todo-card>
+  </div>
+  <button class="btn" (click)="addColumn()">+ New Column</button>
+</div>

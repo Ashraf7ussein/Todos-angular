@@ -1,0 +1,6 @@
+<div class="card-container" (click)="onCardClick()">
+  <h3>{{ todo.title }}</h3>
+  <p>{{ todo.description }}</p>
+  <p *ngIf="todo.subtasks.length > 0">{{ todo.subtasks.length }} SubTasks</p>
+  <button class="btn-delete" (click)="onDelete(); $event.stopPropagation()">Delete</button>
+</div>

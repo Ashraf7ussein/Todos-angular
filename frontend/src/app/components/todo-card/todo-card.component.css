@@ -1,0 +1,26 @@
+.card-container {
+  background-color: #282834;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.card-container h3 {
+  color: white;
+  font-weight: 500;
+}
+
+.btn-delete {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: #dc3545; 
+  color: white;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}

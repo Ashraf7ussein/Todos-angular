@@ -1,0 +1,8 @@
+.app {
+    background-color: #1d1d29;
+}
+
+.app-container {
+    display: grid;
+    grid-template-columns: 15% auto;
+}
